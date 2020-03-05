@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <title></title>
+</head>
+<body>
+
+    <div class="section">
+        <div class="container">
+            <h3 class="title has-text-centered">Registration Form</h3>
+            <div class="columns">
+                <div class="column is-offset-3 is-6">
+                        <form action="#">
+                            <!-- name -->
+                                <div class="field">
+                                    <label for="name">Name*</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="name" id="name">
+                                    </div>
+                                    <p class="help is-danger"></p>
+                                </div>
+
+                            <!-- roll and session -->
+                            <div class="field">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="control">
+                                            <label for="id">ID Number*</label>
+                                            <input type="text" name="id" id="id" class="input">
+                                        </div>
+                                        <p class="help is-danger"></p>
+                                    </div>
+                                    <div class="column">
+                                        <div class="control">
+                                            <label for="session">Current Session</label>
+                                            <input type="text" name="session" id="session" class="input">
+                                        </div>
+                                        <p class="help is-danger"></p>
+                                    </div>
+                                   
+                                            
+                                        
+                                        </div>
+                                    </div>
+                                <!-- </div>
+                            </div> -->
+
+                            <div class="field">
+                                <label for="dept">Department*</label>
+                                <div class="control">
+                                    <input class="input" type="text" name="dept" id="dept">
+                                </div>
+                                <p class="help is-danger"></p>
+                            </div>
+                            
+                            <div class="field is-grouped has-addons">
+                                <div class="columns">
+                                    <div class="column is-offset-1">
+                                        <label for="type">Membership Type*</label>
+                                        <div class="control">
+                                            <div class="select">
+                                                <select name="type" id="type">
+                                                        <option value="0" selected="selected">Select one</option>
+                                                        <option value="250">Half-yearly</option>
+                                                        <option value="400">Yearly</option>
+                                                </select>
+                                            </div>
+                                            <p class="help is-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                           
+                                           <fieldset disabled>
+                                            <div class="field has-addons">
+                                                <div class="control">
+                                                    <button class="is-static button">Tk.</button>
+                                                </div>
+                                                <div class="control">
+                                                    <input type="text" name="amount" id="amount" class="input">
+                                                </div>
+                                            </div> 
+                                           </fieldset>                          
+                                        </div>
+                                        <div class="column is-1"></div>
+                               
+                                </div>
+                                
+                            </div>
+
+                            <div class="field">
+                                <div class="columns">
+                                    <div class="column">
+                                        <label for="email">E-mail Address*</label>
+                                        <div class="control">
+                                            <input type="email" name="email" id="email" class="input">
+                                        </div>
+                                        <p class="help is-danger"></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- <div class="field">
+                               <p> Please choose a field of interest:</p>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="pro" name="" id="pro"> Programming <br>
+                                    <input type="checkbox" value="emb" name="" id="emb"> Embedded Systems <br>
+                                    <input type="checkbox" value="pho" name="" id="pho"> Photography
+                                </label>
+                            </div> -->
+
+                            <div class="field">
+                                <div class="control">
+                                    <button href="#" class="button is-primary is-primary is-fullwidth" id="submitButton">Submit</button>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox" id="checkbox"> I agree with all the rules of the club.
+                                </label>
+                            </div>
+
+
+                            
+
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/validation.js"></script>
+</body>
+</html>
